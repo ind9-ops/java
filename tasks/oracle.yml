@@ -12,7 +12,7 @@
     pkg: "{{item}}"
     state: present
   when: item|search("^oracle")
-  with_items: java_versions
+  with_items: "{{java_versions}}"
 
 - name: Set default JAVA version
   sudo: yes
