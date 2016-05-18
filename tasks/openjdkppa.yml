@@ -1,0 +1,6 @@
+---
+- name: Add the OpenJDK APT repository for Java8
+  sudo: yes
+  apt_repository:
+    repo: "ppa:openjdk-r/ppa"
+    state: present

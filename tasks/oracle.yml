@@ -1,0 +1,19 @@
+---
+- include: webupd8.yml
+
+- name: Automatically select the Oracle License
+  shell: echo debconf shared/accepted-oracle-license-v1-1 select true | sudo debconf-set-selections
+  changed_when: false
+
+- name: Install Oracle Java
+  sudo: yes
+  apt:
+    pkg: "{{item}}"
+    state: latest
+  when: item|search("^oracle")
+  with_items: java_versions
+
+- name: Set default JAVA version
+  sudo: yes
+  shell: "update-java-alternatives -s {{java_default_version}}"
+  when: java_default_version is defined

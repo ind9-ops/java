@@ -1,0 +1,10 @@
+---
+- include: openjdkppa.yml
+
+- name: Install OpenJDK
+  sudo: yes
+  apt:
+    pkg: "{{item}}"
+    state: latest
+  when: item|search("^openjdk")
+  with_items: java_versions
