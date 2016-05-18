@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/ind9-ops/java.svg?branch=best-practices)](https://travis-ci.org/ind9-ops/ffwd)
+
 Installing a Oracle JDK
 -----------------------
 
