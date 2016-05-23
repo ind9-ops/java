@@ -1,0 +1,4 @@
+java_versions:
+  - oracle-jdk7-installer
+  - openjdk-7-jdk
+java_default_version: java-8-oracle
