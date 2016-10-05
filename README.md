@@ -17,3 +17,7 @@ The valid values are:
   * openjdk-6-jre-headless (OpenJDK JRE 6 Headless)
   * openjdk-7-jre (OpenJDK JRE 7)
   * openjdk-7-jre-headless (OpenJDK JRE 7 Headless)
+  
+Override *java_default_version* with the JDK that you want to set as the default JDK.
+
+The valid value is one of the values overridden in *java versions*
