@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/ind9-ops/java.svg?branch=best-practices)](https://travis-ci.org/indix/ansible-java.svg?branch=master)
+[![BuildStatus](https://travis-ci.org/indix/ansible-java.svg?branch=master)](https://travis-ci.org/indix/ansible-java)
 
 Installing a Oracle JDK
 -----------------------
