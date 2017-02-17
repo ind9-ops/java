@@ -10,7 +10,7 @@
   apt:
     pkg: "{{item}}"
     state: present
-  with_items: oracle_java_versions
+  with_items: "{{oracle_java_versions}}"
 
 - name: Set default JAVA version
   sudo: yes
