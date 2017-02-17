@@ -2,10 +2,8 @@
 - include: openjdkppa.yml
 
 - name: Install OpenJDK
-  become: yes
-  become_method: sudo
+  sudo: yes
   apt:
     pkg: "{{item}}"
     state: present
-  when: item|search("^openjdk")
-  with_items: java_versions
+  with_items: openjdk_java_versions

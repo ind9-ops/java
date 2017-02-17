@@ -1,2 +1,10 @@
 ---
 webupd8_repo_url: http://ppa.launchpad.net/webupd8team/java/ubuntu
+
+openjdk_java_versions:
+  - openjdk-7-jdk
+
+oracle_java_versions:
+  - oracle-jdk7-installer
+
+# java_default_version: java-7-oracle
