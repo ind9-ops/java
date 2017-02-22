@@ -1,6 +1,6 @@
 ---
 - include: oracle.yml
-  when: java_versions is defined and java_versions is sequence and java_versions|join|search("oracle")
+  when: oracle_java_versions is defined
 
 - include: openjdk.yml
-  when: java_versions is defined and java_versions is sequence and java_versions|join|search("openjdk")
+  when: openjdk_java_versions is defined

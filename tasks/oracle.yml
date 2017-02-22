@@ -6,15 +6,14 @@
   changed_when: false
 
 - name: Install Oracle Java
-  become: yes
-  become_method: sudo
+  sudo: yes
   apt:
     pkg: "{{item}}"
     state: present
-  when: item|search("^oracle")
-  with_items: java_versions
+  with_items: "{{oracle_java_versions}}"
 
 - name: Set default JAVA version
   sudo: yes
   shell: "update-java-alternatives -s {{java_default_version}}"
   when: java_default_version is defined
+  changed_when: False
